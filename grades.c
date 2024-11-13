@@ -2,7 +2,14 @@
 
 int main() {
     //ask for the mark later
-    int mark = 50;
+    int mark;
+
+    // Ask the user to type a mark
+    printf("Type a mark: ");
+
+    // Get and save the mark the user types
+    scanf("%d", &mark);
+
     switch (mark) {
         case 85 ... 100:
             printf("High Distinction\n");
@@ -21,7 +28,7 @@ int main() {
             break;
         
         default:
-            printf("FAILLLLLL\n");
+            printf("You are not defined by a number. There's always next time.\n");
         
     }
 
